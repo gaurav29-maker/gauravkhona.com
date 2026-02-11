@@ -3,33 +3,44 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
     return (
-        <section className="pt-32 pb-24 md:pt-48 md:pb-32 px-6 text-center">
-            <div className="max-w-4xl mx-auto">
-                <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-black mb-6">
-                    1-on-1 <br className="hidden md:block" />
-                    Trading Session
+        <section className="relative min-h-[90vh] flex flex-col items-center justify-center px-6 text-center overflow-hidden">
+            {/* Minimal background detail like SpaceX */}
+            <div className="absolute inset-0 bg-[#000000]" />
+
+            <div className="relative z-10 max-w-5xl mx-auto">
+                <p className="text-technical mb-8 animate-fade-in">
+                    System Architecture // Phase 01
+                </p>
+
+                <h1 className="heading-xl mb-8">
+                    Direct Market <br /> Intelligence
                 </h1>
 
-                <p className="text-xl md:text-2xl text-muted font-medium mb-8">
-                    Focused. Structured. Noise-Free.
+                <p className="text-xl md:text-2xl text-muted font-light max-w-2xl mx-auto leading-relaxed mb-12 tracking-tight">
+                    High-Resolution 1-on-1 private trading engineering. <br className="hidden md:block" />
+                    Focus on execution logic and systemic risk.
                 </p>
 
-                <p className="text-lg text-muted/80 max-w-xl mx-auto leading-relaxed mb-10">
-                    A private, educational trading session designed for serious traders who want clarity in execution, risk management, and decision-making.
-                </p>
-
-                <div className="flex flex-col items-center gap-4 mb-6">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                     <Link
                         href="#pricing"
-                        className="group inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-black hover:bg-black/80 transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]"
+                        className="button-primary group"
                     >
-                        Book a Session
+                        Initiate Session
                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>
-                    <span className="text-sm text-muted">
-                        ₹9,000 per session <span className="mx-2">|</span> Limited availability
-                    </span>
+                    <Link
+                        href="#what-we-cover"
+                        className="button-secondary"
+                    >
+                        View Framework
+                    </Link>
                 </div>
+            </div>
+
+            {/* Subtle scroll indicator */}
+            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-technical opacity-30">
+                Scroll to Explore
             </div>
         </section>
     );

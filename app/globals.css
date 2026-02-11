@@ -2,16 +2,18 @@
 
 @theme {
   --font-sans: var(--font-inter);
-  
-  --color-background: #F8F9FA;
-  --color-foreground: #111111;
-  --color-muted: #5F6368;
-  --color-accent: #0B3C49;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  --color-background: #000000;
+  --color-foreground: #FFFFFF;
+  --color-muted: #888888;
+  --color-border: #222222;
+  --color-accent: #FFFFFF;
 }
 
 :root {
-  --background: #F8F9FA;
-  --foreground: #111111;
+  --background: #000000;
+  --foreground: #FFFFFF;
 }
 
 body {
@@ -20,4 +22,31 @@ body {
   font-family: var(--font-inter), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+/* Custom Typography Utilities */
+.heading-xl {
+  @apply text-5xl md:text-8xl font-bold tracking-tighter leading-[0.9] uppercase;
+}
+
+.heading-lg {
+  @apply text-3xl md:text-5xl font-bold tracking-tighter uppercase;
+}
+
+.text-technical {
+  font-family: var(--font-mono);
+  @apply text-xs uppercase tracking-widest text-muted;
+}
+
+.border-technical {
+  @apply border-t border-border;
+}
+
+.button-primary {
+  @apply inline-flex items-center justify-center px-8 py-3 text-sm font-bold uppercase tracking-widest text-black bg-white hover:bg-white/90 transition-all duration-300 rounded-none;
+}
+
+.button-secondary {
+  @apply inline-flex items-center justify-center px-8 py-3 text-sm font-bold uppercase tracking-widest text-white border border-white hover:bg-white hover:text-black transition-all duration-300 rounded-none;
 }

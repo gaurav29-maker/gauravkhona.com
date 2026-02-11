@@ -1,13 +1,17 @@
 export default function WhatThisIs() {
     return (
-        <section className="py-24 px-6 bg-white/50 text-center">
-            <div className="max-w-2xl mx-auto">
-                <h2 className="text-3xl font-bold mb-6 text-foreground">
-                    What this session is
-                </h2>
-                <p className="text-lg md:text-xl text-muted leading-relaxed">
-                    This is a personal, process-driven trading session focused on how decisions are made in real market conditions. No tips. No shortcuts. No promises.
-                </p>
+        <section className="py-32 px-6 bg-black border-technical text-center">
+            <div className="max-w-4xl mx-auto">
+                <p className="text-technical mb-6">Philosophy</p>
+                <h2 className="heading-lg mb-10">Direct Objective</h2>
+                <div className="max-w-2xl mx-auto">
+                    <p className="text-2xl md:text-3xl font-light text-muted leading-[1.3] mb-8 tracking-tight">
+                        A private, objective-driven trading session focused on the <span className="text-white font-medium italic">mechanical engineering</span> of decisions under real market conditions.
+                    </p>
+                    <p className="text-muted text-sm md:text-base leading-relaxed max-w-xl mx-auto">
+                        We move beyond retail concepts into technical frameworks. No signals. No secrets. No shortcuts. Just the cold extraction of market edges.
+                    </p>
+                </div>
             </div>
         </section>
     );

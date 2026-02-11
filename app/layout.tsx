@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "1-on-1 Trading Session | Premium Education",
-  description: "A private, educational trading session designed for serious traders who want clarity in execution, risk management, and decision-making.",
+  title: "Gaurav Khona // Market Intelligence",
+  description: "High-resolution trading engineering. 1-on-1 private sessions for serious capital allocation and risk framework design.",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased bg-[#F8F9FA] text-[#111111]`}
+        className={`${inter.variable} antialiased bg-black text-white`}
       >
         {children}
       </body>

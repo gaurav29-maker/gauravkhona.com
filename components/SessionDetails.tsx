@@ -1,25 +1,22 @@
 export default function SessionDetails() {
     const details = [
-        { label: "Format", value: "1-on-1 Private Session" },
-        { label: "Mode", value: "Online (Zoom/Meet)" },
-        { label: "Duration", value: "Market-focused full session" },
-        { label: "Availability", value: "Limited slots per week" },
+        { label: "Architecture", value: "1-on-1 Private Technical Build" },
+        { label: "Deployment", value: "Digital Matrix (Zoom/Meet)" },
+        { label: "Runtime", value: "Market-Focused Full Session" },
+        { label: "Access", value: "Strict Entry Criteria Apply" },
     ];
 
     return (
-        <section className="py-24 px-6 bg-white/50 text-center">
-            <div className="max-w-2xl mx-auto">
-                <h2 className="text-3xl font-bold mb-12 text-foreground">
-                    Session Details
-                </h2>
-
-                <div className="space-y-8">
+        <section className="py-32 px-6 border-technical bg-black">
+            <div className="max-w-4xl mx-auto">
+                <p className="text-technical mb-12 text-center">Operational Data</p>
+                <div className="grid grid-cols-1 gap-1">
                     {details.map((detail, index) => (
-                        <div key={index} className="flex flex-col sm:flex-row sm:items-baseline justify-center border-b border-muted/10 pb-6 last:border-0 text-lg">
-                            <span className="font-semibold text-foreground w-32 shrink-0 mb-1 sm:mb-0 text-center sm:text-right sm:mr-4">
-                                {detail.label}
+                        <div key={index} className="flex flex-col md:flex-row items-baseline justify-between p-8 border border-border/50 group hover:bg-[#0A0A0A] transition-colors">
+                            <span className="text-technical text-white mb-2 md:mb-0 group-hover:pl-2 transition-all">
+                                [ {detail.label} ]
                             </span>
-                            <span className="text-muted text-center sm:text-left">
+                            <span className="text-xl md:text-2xl font-bold tracking-tight text-muted group-hover:text-white transition-colors">
                                 {detail.value}
                             </span>
                         </div>

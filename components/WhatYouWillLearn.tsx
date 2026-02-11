@@ -1,29 +1,38 @@
 export default function WhatYouWillLearn() {
-    const items = [
-        "Trade selection logic",
-        "Entry & exit structuring",
-        "Risk management frameworks",
-        "Position sizing concepts",
-        "Drawdown handling",
-        "Emotional discipline",
+    const systems = [
+        { id: "01", title: "Trade Selection Logic", desc: "Technical filtering and high-conviction pattern identification." },
+        { id: "02", title: "Execution Architecture", desc: "Structuring entries and exits with precision logic." },
+        { id: "03", title: "Risk Frameworks", desc: "Non-negotiable distribution paths and capital protection." },
+        { id: "04", title: "Allocation Systems", desc: "Data-driven position sizing and dynamic scaling." },
+        { id: "05", title: "Drawdown Protocol", desc: "Systemic handling of volatility and equity preservation." },
+        { id: "06", title: "Cognitive Neutrality", desc: "Eliminating subjective bias from technical execution." },
     ];
 
     return (
-        <section className="py-24 px-6 text-center">
+        <section id="what-we-cover" className="py-32 px-6 border-technical">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl font-bold mb-12 text-foreground">
-                    What we will cover
-                </h2>
+                <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+                    <div className="max-w-xl">
+                        <p className="text-technical mb-4">Module Overview</p>
+                        <h2 className="heading-lg">System Components</h2>
+                    </div>
+                    <p className="text-muted max-w-md text-sm md:text-base tracking-tight">
+                        Deep-dive technical sessions covering the core architecture of high-performance trading systems. No theory. Pure implementation.
+                    </p>
+                </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 max-w-4xl mx-auto">
-                    {items.map((item, index) => (
-                        <div key={index} className="flex items-center justify-center group cursor-default p-2 rounded-lg transition-colors hover:bg-accent/5">
-                            {/* Minimal bullet or icon could be here, but spec says "minimal or none". 
-                   Using a simple dash or just text. */}
-                            <span className="text-accent mr-4 h-1.5 w-1.5 rounded-full bg-accent shrink-0 block transition-transform duration-300 group-hover:scale-150" />
-                            <h3 className="text-xl text-foreground/90 font-medium group-hover:text-accent transition-all duration-300 group-hover:translate-x-1 text-left">
-                                {item}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+                    {systems.map((system) => (
+                        <div key={system.id} className="group flex flex-col">
+                            <div className="text-technical text-white mb-6 border-b border-border pb-2 inline-block w-fit">
+                                // {system.id}
+                            </div>
+                            <h3 className="text-2xl font-bold mb-4 tracking-tighter uppercase group-hover:text-muted transition-colors">
+                                {system.title}
                             </h3>
+                            <p className="text-muted text-sm leading-relaxed border-l-2 border-border pl-4">
+                                {system.desc}
+                            </p>
                         </div>
                     ))}
                 </div>
