@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lato } from "next/font/google";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const lato = Lato({
+  weight: ["300", "400", "700", "900"],
   subsets: ["latin"],
+  variable: "--font-lato",
 });
 
 export const metadata: Metadata = {
@@ -20,8 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased bg-black text-white`}
+        className={`${lato.variable} antialiased bg-[#F9F9F9] text-gray-800 font-sans pt-16`}
       >
+        <Navbar />
         {children}
       </body>
     </html>

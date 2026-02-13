@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-lato);
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
 
   --color-background: #FFFFFF;
