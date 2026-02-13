@@ -4,16 +4,18 @@
   --font-sans: var(--font-inter);
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
 
-  --color-background: #000000;
-  --color-foreground: #FFFFFF;
-  --color-muted: #888888;
-  --color-border: #222222;
-  --color-accent: #FFFFFF;
+  --color-background: #FFFFFF;
+  --color-foreground: #333333;
+  --color-muted: #666666;
+  --color-border: #E0E0E0;
+  --color-primary: #387ED1;
+  /* Zerodha Blue */
+  --color-primary-hover: #2860A0;
 }
 
 :root {
-  --background: #000000;
-  --foreground: #FFFFFF;
+  --background: #FFFFFF;
+  --foreground: #333333;
 }
 
 body {
@@ -22,31 +24,41 @@ body {
   font-family: var(--font-inter), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: -0.01em;
+  line-height: 1.6;
+}
+
+::selection {
+  background-color: #387ED1;
+  color: #fff;
 }
 
 /* Custom Typography Utilities */
 .heading-xl {
-  @apply text-5xl md:text-8xl font-bold tracking-tighter leading-[0.9] uppercase;
+  @apply text-5xl md:text-7xl font-bold tracking-tight text-black mb-6;
 }
 
 .heading-lg {
-  @apply text-3xl md:text-5xl font-bold tracking-tighter uppercase;
+  @apply text-3xl md:text-4xl font-semibold tracking-tight text-black mb-4;
 }
 
-.text-technical {
-  font-family: var(--font-mono);
-  @apply text-xs uppercase tracking-widest text-muted;
+.heading-md {
+  @apply text-xl md:text-2xl font-medium text-black mb-3;
 }
 
-.border-technical {
-  @apply border-t border-border;
+.container-custom {
+  @apply max-w-6xl mx-auto px-6;
 }
 
+/* FinTech Buttons */
 .button-primary {
-  @apply inline-flex items-center justify-center px-8 py-3 text-sm font-bold uppercase tracking-widest text-black bg-white hover:bg-white/90 transition-all duration-300 rounded-none;
+  @apply inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-white bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] transition-all duration-300 rounded-lg shadow-sm hover:shadow-md;
 }
 
 .button-secondary {
-  @apply inline-flex items-center justify-center px-8 py-3 text-sm font-bold uppercase tracking-widest text-white border border-white hover:bg-white hover:text-black transition-all duration-300 rounded-none;
+  @apply inline-flex items-center justify-center px-8 py-3 text-base font-medium text-[var(--color-primary)] hover:bg-blue-50 transition-all duration-300 rounded-lg;
+}
+
+/* Card Style */
+.card {
+  @apply bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 p-8;
 }
