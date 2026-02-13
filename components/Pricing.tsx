@@ -44,7 +44,7 @@ export default function Pricing() {
                                 href="mailto:contact@gauravkhona.com?subject=Direct Market Intelligence Inquiry"
                                 className="button-primary w-full text-lg py-4 shadow-blue-500/20"
                             >
-                                Secure Your Slot
+                                Secure Access
                                 <ArrowRight className="ml-2 h-4 w-4" />
                             </Link>
                             <p className="mt-4 text-xs text-muted">

@@ -31,7 +31,7 @@ export default function Hero() {
                     className="flex flex-col sm:flex-row items-center justify-center gap-6"
                 >
                     <Link
-                        href="#pricing"
+                        href="mailto:contact@gauravkhona.com?subject=Direct Market Intelligence Inquiry"
                         className="button-primary"
                     >
                         Initiate Session
