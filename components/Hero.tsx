@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { useMarketStatus } from "@/hooks/useMarketStatus";
 
 export default function Hero() {
+    const { isOpen, statusText, color } = useMarketStatus();
     return (
         <section className="relative min-h-[85vh] flex flex-col items-center justify-center px-6 text-center overflow-hidden bg-white">
 
@@ -74,7 +76,7 @@ export default function Hero() {
                         {/* Header */}
                         <div className="bg-blue-50 px-4 py-2 border-b border-blue-100 flex justify-between items-center">
                             <span className="font-bold text-blue-800">Market Depth</span>
-                            <span className="text-[#10B981] animate-pulse">● Live</span>
+                            <span className={`${color} animate-pulse`}>● {isOpen ? 'Live' : 'Offline'}</span>
                         </div>
 
                         {/* Depth Table */}
@@ -154,8 +156,8 @@ export default function Hero() {
 
                         {/* Footer / Context */}
                         <div className="bg-gray-50 px-4 py-3 text-[10px] text-gray-500 border-t border-gray-200 text-center">
-                            <span className="block font-bold mb-1">SESSION STATUS: OPEN</span>
-                            <span className="block opacity-75">Limited Supply. Demand High.</span>
+                            <span className="block font-bold mb-1">SESSION STATUS: {statusText}</span>
+                            <span className="block opacity-75">{isOpen ? 'Limited Supply. Demand High.' : 'Orders queued for open.'}</span>
                         </div>
                     </div>
                 </motion.div>

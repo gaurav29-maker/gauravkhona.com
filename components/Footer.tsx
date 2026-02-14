@@ -1,4 +1,10 @@
+"use client";
+
+import { useMarketStatus } from "@/hooks/useMarketStatus";
+
 export default function Footer() {
+    const { statusText, color } = useMarketStatus();
+
     return (
         <footer className="py-24 px-6 border-t border-gray-200 bg-white">
             <div className="max-w-7xl mx-auto">
@@ -29,7 +35,7 @@ export default function Footer() {
                                 © {new Date().getFullYear()} GAURAV KHONA SYSTEMS // V 2.4.0
                             </p>
                             <div className="flex gap-6 text-[10px] text-gray-400 font-mono">
-                                <span className="text-[#10B981] font-bold">● SYSTEM: OPERATIONAL</span>
+                                <span className={`${color} font-bold`}>● SYSTEM: {statusText === 'MARKET OPEN' ? 'OPERATIONAL' : 'STANDBY'}</span>
                                 <span>BUILD: KITE_ARCH_24</span>
                             </div>
                         </div>
