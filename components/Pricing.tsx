@@ -73,61 +73,65 @@ export default function Pricing() {
                 </div>
 
                 {/* Body Content */}
-                <div className="p-6 min-h-[400px] flex flex-col relative">
+                <div className="p-6 min-h-[400px] flex flex-col relative bg-white">
                     {view === 'order' ? (
                         /* --- ORDER WINDOW VIEW --- */
                         <>
                             {/* Tabs */}
-                            <div className="flex items-center gap-4 mb-8 text-sm">
-                                <div className="flex items-center gap-2">
-                                    <input type="radio" name="product" id="mis" className="accent-[#4184F3]" />
-                                    <label htmlFor="mis" className="text-gray-500 cursor-pointer">Intraday <span>MIS</span></label>
+                            <div className="flex items-center gap-6 mb-8 text-sm">
+                                <div className="flex items-center gap-2 group cursor-pointer">
+                                    <input type="radio" name="product" id="mis" className="w-4 h-4 accent-[#4184F3] cursor-pointer" />
+                                    <label htmlFor="mis" className="text-gray-500 group-hover:text-gray-800 cursor-pointer transition-colors">
+                                        Intraday <span className="text-[10px] bg-gray-100 text-gray-500 px-1 rounded ml-1">MIS</span>
+                                    </label>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <input type="radio" name="product" id="cnc" className="accent-[#4184F3]" defaultChecked />
-                                    <label htmlFor="cnc" className="text-gray-800 font-medium cursor-pointer">Longterm <span>CNC</span></label>
+                                <div className="flex items-center gap-2 group cursor-pointer">
+                                    <input type="radio" name="product" id="cnc" className="w-4 h-4 accent-[#4184F3] cursor-pointer" defaultChecked />
+                                    <label htmlFor="cnc" className="text-gray-800 font-bold cursor-pointer">
+                                        Longterm <span className="text-[10px] bg-gray-100 text-gray-500 px-1 rounded ml-1">CNC</span>
+                                    </label>
                                 </div>
                             </div>
 
                             {/* Inputs */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
                                 <div>
-                                    <label className="text-xs text-gray-400 block mb-1">Qty.</label>
+                                    <label className="text-[11px] text-gray-500 uppercase font-bold tracking-wider mb-2 block">Qty.</label>
                                     <input
-                                        type="text"
+                                        type="number"
                                         value={qty}
                                         readOnly
-                                        className="w-full border border-gray-300 rounded p-2 text-right text-gray-700 bg-gray-50 focus:outline-none focus:border-[#4184F3]"
+                                        className="w-full border border-gray-300 rounded-sm p-2 text-gray-900 bg-white focus:outline-none focus:border-[#4184F3] focus:ring-1 focus:ring-[#4184F3] transition-all font-medium"
                                     />
                                 </div>
                                 <div>
-                                    <label className="text-xs text-gray-400 block mb-1">Price</label>
+                                    <label className="text-[11px] text-gray-500 uppercase font-bold tracking-wider mb-2 block">Price</label>
                                     <input
-                                        type="text"
+                                        type="number"
                                         value={price}
                                         readOnly
-                                        className="w-full border border-gray-300 rounded p-2 text-right text-gray-700 bg-gray-50 focus:outline-none focus:border-[#4184F3]"
+                                        className="w-full border border-gray-300 rounded-sm p-2 text-gray-900 bg-gray-50 cursor-not-allowed font-medium"
                                     />
                                 </div>
                             </div>
 
                             {/* Order Type Tabs (Visual only) */}
-                            <div className="flex items-center gap-4 mb-auto text-sm opacity-50 pointer-events-none">
+                            <div className="flex items-center gap-6 mb-auto text-sm">
                                 <div className="flex items-center gap-2">
-                                    <input type="radio" checked readOnly className="accent-[#4184F3]" />
-                                    <label>Market</label>
+                                    <input type="radio" checked readOnly className="w-4 h-4 accent-[#4184F3]" />
+                                    <label className="text-gray-800 font-medium">Market</label>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <input type="radio" disabled />
-                                    <label>Limit</label>
+                                <div className="flex items-center gap-2 opacity-50">
+                                    <input type="radio" disabled className="w-4 h-4" />
+                                    <label className="text-gray-500">Limit</label>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <input type="radio" disabled />
-                                    <label>SL</label>
+                                <div className="flex items-center gap-2 opacity-50">
+                                    <input type="radio" disabled className="w-4 h-4" />
+                                    <label className="text-gray-500">SL</label>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <input type="radio" disabled />
-                                    <label>SL-M</label>
+                                <div className="flex items-center gap-2 opacity-50">
+                                    <input type="radio" disabled className="w-4 h-4" />
+                                    <label className="text-gray-500">SL-M</label>
                                 </div>
                             </div>
                         </>
