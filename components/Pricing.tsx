@@ -56,17 +56,17 @@ export default function Pricing() {
             <div className="w-full max-w-lg bg-white rounded-lg shadow-xl overflow-hidden font-sans border border-gray-200">
 
                 {/* Header changes based on View */}
-                <div className={`${view === 'quiz' ? 'bg-gray-900' : 'bg-[#4184F3]'} text-white px-6 py-4 flex items-center justify-between transition-colors duration-300`}>
+                <div className={`${view === 'quiz' ? 'bg-[#10B981]' : 'bg-[#4184F3]'} text-white px-6 py-4 flex items-center justify-between transition-colors duration-300`}>
                     <div>
                         <h2 className="text-lg font-semibold tracking-wide">
                             {view === 'order' ? 'Buy GKHONA 26 FEB FUT' : `SYSTEM AUDIT // STEP 0${step + 1}`}
                         </h2>
-                        <p className={`text-xs mt-0.5 ${view === 'quiz' ? 'text-gray-400 font-mono' : 'text-blue-100'}`}>
+                        <p className={`text-xs mt-0.5 ${view === 'quiz' ? 'text-green-50 font-mono' : 'text-blue-100'}`}>
                             {view === 'order' ? 'NSE • ₹ 9,000.00' : 'QUALIFICATION PROTOCOL'}
                         </p>
                     </div>
                     <div className="flex items-center gap-2">
-                        <span className={`text-xs px-2 py-1 rounded ${view === 'quiz' ? 'bg-gray-800 text-gray-300' : 'bg-blue-600 text-white'}`}>
+                        <span className={`text-xs px-2 py-1 rounded ${view === 'quiz' ? 'bg-[#065f46] text-green-100' : 'bg-blue-600 text-white'}`}>
                             {view === 'order' ? 'NFO' : 'REQ'}
                         </span>
                     </div>
@@ -147,10 +147,10 @@ export default function Pricing() {
                                             <button
                                                 key={option}
                                                 onClick={() => handleAnswer(steps[step].id, option)}
-                                                className="w-full text-left p-4 rounded border border-gray-200 hover:border-blue-500 hover:bg-blue-50 transition-all text-sm font-medium text-gray-700 flex justify-between items-center group"
+                                                className="w-full text-left p-4 rounded border border-gray-200 hover:border-[#10B981] hover:bg-green-50 transition-all text-sm font-medium text-gray-700 flex justify-between items-center group"
                                             >
                                                 {option}
-                                                <span className="opacity-0 group-hover:opacity-100 text-blue-500">→</span>
+                                                <span className="opacity-0 group-hover:opacity-100 text-[#10B981]">→</span>
                                             </button>
                                         ))}
                                     </div>
@@ -158,7 +158,7 @@ export default function Pricing() {
                             ) : (
                                 /* Final Step */
                                 <div className="text-center py-8">
-                                    <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                                    <div className="w-16 h-16 bg-green-100 text-[#10B981] rounded-full flex items-center justify-center mx-auto mb-6">
                                         <RefreshCw className="w-8 h-8 animate-spin-slow" />
                                     </div>
                                     <h3 className="text-xl font-bold text-gray-800 mb-2">Audit Complete</h3>
@@ -167,7 +167,7 @@ export default function Pricing() {
                                     </p>
                                     <Link
                                         href={generateMailto()}
-                                        className="inline-block w-full py-4 bg-gray-900 text-white font-bold rounded shadow-lg hover:bg-black transition-colors"
+                                        className="inline-block w-full py-4 bg-[#10B981] text-white font-bold rounded shadow-lg hover:bg-[#059669] transition-colors"
                                     >
                                         SUBMIT APPLICATION
                                     </Link>
@@ -208,7 +208,7 @@ export default function Pricing() {
                     <div className="bg-[#FAFAFA] px-6 py-4 border-t border-gray-100">
                         <div className="w-full bg-gray-200 h-1.5 rounded-full overflow-hidden">
                             <div
-                                className="bg-gray-900 h-full transition-all duration-300"
+                                className="bg-[#10B981] h-full transition-all duration-300"
                                 style={{ width: `${((step + 1) / 3) * 100}%` }}
                             ></div>
                         </div>
