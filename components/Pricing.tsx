@@ -73,12 +73,12 @@ export default function Pricing() {
                 </div>
 
                 {/* Body Content */}
-                <div className="p-6 min-h-[400px] flex flex-col relative bg-white">
+                <div className="p-6 flex flex-col relative bg-white">
                     {view === 'order' ? (
                         /* --- ORDER WINDOW VIEW --- */
                         <>
                             {/* Tabs */}
-                            <div className="flex items-center gap-4 mb-8 text-sm">
+                            <div className="flex items-center gap-4 mb-6 text-sm">
                                 <div className="flex items-center gap-2">
                                     <input type="radio" name="product" id="mis" className="accent-[#4184F3]" />
                                     <label htmlFor="mis" className="text-gray-500 cursor-pointer">Intraday <span>MIS</span></label>
@@ -90,7 +90,7 @@ export default function Pricing() {
                             </div>
 
                             {/* Inputs */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                                 <div>
                                     <label className="text-xs text-gray-400 block mb-1">Qty.</label>
                                     <input
@@ -112,7 +112,7 @@ export default function Pricing() {
                             </div>
 
                             {/* Order Type Tabs (Visual only) */}
-                            <div className="flex items-center gap-4 mb-auto text-sm opacity-50 pointer-events-none">
+                            <div className="flex items-center gap-4 text-sm opacity-50 pointer-events-none mb-2">
                                 <div className="flex items-center gap-2">
                                     <input type="radio" checked readOnly className="accent-[#4184F3]" />
                                     <label>Market</label>
