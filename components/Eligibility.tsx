@@ -2,7 +2,7 @@ import { ShieldCheck } from "lucide-react";
 
 export default function Eligibility() {
     return (
-        <section className="py-32 px-6 border-technical bg-[#050505]">
+        <section id="funds" className="py-32 px-6 border-technical bg-[#050505]">
             <div className="max-w-4xl mx-auto text-center">
                 <div className="inline-flex items-center justify-center p-3 rounded-full bg-white/5 mb-8">
                     <ShieldCheck className="h-8 w-8 text-white" strokeWidth={1} />
