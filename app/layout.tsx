@@ -10,8 +10,25 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Gaurav Khona // Market Intelligence",
-  description: "High-resolution trading engineering. 1-on-1 private sessions for serious capital allocation and risk framework design.",
+  title: "Gaurav Khona | Systematic Trading Architecture",
+  description: "Institutional-grade technical mentorship for serious capital allocators. Master execution logic, risk frameworks, and systemic design.",
+  openGraph: {
+    title: "Gaurav Khona | Systems",
+    description: "Institutional-grade trading architecture. 1-on-1 private engineering sessions.",
+    url: "https://gauravkhona.com",
+    siteName: "Gaurav Khona Console",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gaurav Khona | Systems",
+    description: "Institutional-grade trading architecture.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({

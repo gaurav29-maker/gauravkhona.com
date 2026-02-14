@@ -1,15 +1,16 @@
 export default function WhatThisIs() {
     return (
-        <section className="py-32 px-6 bg-black border-technical text-center">
+        <section className="py-32 px-6 bg-white border-b border-gray-100 text-center">
             <div className="max-w-4xl mx-auto">
-                <p className="text-technical mb-6">Philosophy</p>
-                <h2 className="heading-lg mb-10">Direct Objective</h2>
-                <div className="max-w-2xl mx-auto">
-                    <p className="text-2xl md:text-3xl font-light text-muted leading-[1.3] mb-8 tracking-tight">
-                        A private, objective-driven trading session focused on the <span className="text-white font-medium italic">mechanical engineering</span> of decisions under real market conditions.
+                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Objective Mandate</p>
+                <h2 className="text-3xl md:text-5xl font-black text-gray-900 tracking-tight mb-10">Direct Execution Logic</h2>
+                <div className="max-w-3xl mx-auto text-left border-l-4 border-blue-500 pl-8">
+                    <p className="text-xl md:text-2xl font-medium text-gray-800 leading-relaxed mb-8">
+                        A private, technical audit focused on the <span className="text-blue-600">mechanical engineering</span> of decisions under live market conditions.
                     </p>
-                    <p className="text-muted text-sm md:text-base leading-relaxed max-w-xl mx-auto">
-                        We move beyond retail concepts into technical frameworks. No signals. No secrets. No shortcuts. Just the cold extraction of market edges.
+                    <p className="text-gray-600 text-base leading-relaxed">
+                        We strip away retail sentiment to expose the raw mechanics of high-performance systems.
+                        No signals. No speculation. Just the cold extraction of statistical edges through defined risk parameters.
                     </p>
                 </div>
             </div>
