@@ -13,7 +13,7 @@ export default function Holdings() {
     ];
 
     return (
-        <section id="holdings" className="py-24 px-4 bg-white min-h-[80vh] flex flex-col items-center">
+        <section id="holdings" className="py-24 px-4 bg-white flex flex-col items-center">
             <div className="max-w-5xl w-full">
                 {/* Header */}
                 <div className="flex items-center gap-4 mb-8">

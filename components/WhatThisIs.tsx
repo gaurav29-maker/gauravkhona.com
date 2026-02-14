@@ -1,6 +1,6 @@
 export default function WhatThisIs() {
     return (
-        <section className="py-32 px-6 bg-white border-b border-gray-100 text-center">
+        <section className="py-24 px-6 bg-white text-center">
             <div className="max-w-4xl mx-auto">
                 <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Objective Mandate</p>
                 <h2 className="text-3xl md:text-5xl font-black text-gray-900 tracking-tight mb-10">Direct Execution Logic</h2>
