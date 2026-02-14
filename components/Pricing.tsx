@@ -39,7 +39,7 @@ export default function Pricing() {
                     </div>
 
                     {/* Inputs */}
-                    <div className="grid grid-cols-2 gap-4 mb-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                         <div>
                             <label className="text-xs text-gray-400 block mb-1">Qty.</label>
                             <input

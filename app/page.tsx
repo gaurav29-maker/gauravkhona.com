@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import WhatThisIs from "@/components/WhatThisIs";
-import WhatYouWillLearn from "@/components/WhatYouWillLearn";
+import Holdings from "@/components/Holdings";
 import WhoIsThisFor from "@/components/WhoIsThisFor";
 import Eligibility from "@/components/Eligibility";
 import SessionDetails from "@/components/SessionDetails";
@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <Hero />
+      <Holdings />
       <WhatThisIs />
-      <WhatYouWillLearn />
       <WhoIsThisFor />
       <Eligibility />
       <SessionDetails />
