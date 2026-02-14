@@ -73,7 +73,7 @@ export default function Pricing() {
                 </div>
 
                 {/* Body Content */}
-                <div className="p-6 flex flex-col relative bg-white">
+                <div className="p-4 md:p-6 flex flex-col relative bg-white">
                     {view === 'order' ? (
                         /* --- ORDER WINDOW VIEW --- */
                         <>

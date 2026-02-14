@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Calculator as CalcIcon, RefreshCw } from "lucide-react";
 
-export default function Calculator() {
+export default function RiskCalculator() {
     const [accountSize, setAccountSize] = useState<number>(1000000);
     const [riskPerTrade, setRiskPerTrade] = useState<number>(1);
     const [stopLoss, setStopLoss] = useState<number>(50);
@@ -33,9 +33,9 @@ export default function Calculator() {
                     Position Sizing Calculator
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
                     {/* INPUTS */}
-                    <div className="space-y-8 bg-[#F9F9F9] p-8 rounded border border-gray-200">
+                    <div className="space-y-6 md:space-y-8 bg-[#F9F9F9] p-6 md:p-8 rounded border border-gray-200">
                         <div>
                             <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Account Capital (₹)</label>
                             <input

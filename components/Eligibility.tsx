@@ -34,7 +34,7 @@ export default function Eligibility() {
                 {/* Profiles Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
                     {/* Optimal Fit */}
-                    <div className="bg-white p-8 rounded border border-gray-200 shadow-sm border-t-4 border-t-[#10B981]">
+                    <div className="bg-white p-6 md:p-8 rounded border border-gray-200 shadow-sm border-t-4 border-t-[#10B981]">
                         <h3 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-[#10B981]"></span>
                             Optimal Fit
@@ -50,7 +50,7 @@ export default function Eligibility() {
                     </div>
 
                     {/* Exclusion Zones */}
-                    <div className="bg-white p-8 rounded border border-gray-200 shadow-sm border-t-4 border-t-red-500">
+                    <div className="bg-white p-6 md:p-8 rounded border border-gray-200 shadow-sm border-t-4 border-t-red-500">
                         <h3 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-red-500"></span>
                             Exclusion Zones
