@@ -48,7 +48,7 @@ export default function Holdings() {
                             <div className="hidden md:block text-right text-gray-800 font-medium">
                                 --
                             </div>
-                            <div className="text-right text-green-500 font-medium flex items-center justify-end gap-1">
+                            <div className="text-right text-[#10B981] font-medium flex items-center justify-end gap-1">
                                 {stock.pl}
                                 <span className="text-[10px] hidden sm:inline">▲</span>
                             </div>
@@ -61,8 +61,8 @@ export default function Holdings() {
                         <div className="hidden md:block text-right"></div>
                         <div className="hidden md:block text-right"></div>
                         <div className="hidden md:block text-right"></div>
-                        <div className="col-span-3 md:col-span-1 text-right col-start-4 md:col-start-6 font-bold text-green-600 text-lg flex items-center justify-end">
-                            +285.8% <ArrowUpRight className="w-4 h-4 ml-1" />
+                        <div className="col-span-3 md:col-span-1 text-right col-start-4 md:col-start-6 font-bold text-[#10B981] text-lg flex items-center justify-end">
+                            +285.8% <ArrowUpRight className="w-5 h-5 ml-1" />
                         </div>
                     </div>
                 </div>

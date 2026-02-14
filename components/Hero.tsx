@@ -74,7 +74,7 @@ export default function Hero() {
                         {/* Header */}
                         <div className="bg-blue-50 px-4 py-2 border-b border-blue-100 flex justify-between items-center">
                             <span className="font-bold text-blue-800">Market Depth</span>
-                            <span className="text-blue-600 animate-pulse">● Live</span>
+                            <span className="text-[#10B981] animate-pulse">● Live</span>
                         </div>
 
                         {/* Depth Table */}

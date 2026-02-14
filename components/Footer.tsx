@@ -29,7 +29,7 @@ export default function Footer() {
                                 © {new Date().getFullYear()} GAURAV KHONA SYSTEMS // V 2.4.0
                             </p>
                             <div className="flex gap-6 text-[10px] text-gray-400 font-mono">
-                                <span className="text-green-600 font-bold">● SYSTEM: OPERATIONAL</span>
+                                <span className="text-[#10B981] font-bold">● SYSTEM: OPERATIONAL</span>
                                 <span>BUILD: KITE_ARCH_24</span>
                             </div>
                         </div>
