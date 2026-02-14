@@ -40,9 +40,7 @@ export default function Navbar() {
                     <Link href="#funds" className="hover:text-blue-600 transition-colors">
                         Funds
                     </Link>
-                    <Link href="#apps" className="hover:text-blue-600 transition-colors">
-                        Apps
-                    </Link>
+
 
                     <div className="flex items-center gap-2 ml-4 pl-4 border-l border-gray-200">
                         <div className="w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100">
@@ -80,7 +78,7 @@ export default function Navbar() {
                             <Link href="#holdings" onClick={() => setIsMenuOpen(false)} className="py-2 hover:text-blue-600 border-b border-gray-50">Holdings</Link>
                             <Link href="#positions" onClick={() => setIsMenuOpen(false)} className="py-2 hover:text-blue-600 border-b border-gray-50">Positions</Link>
                             <Link href="#funds" onClick={() => setIsMenuOpen(false)} className="py-2 hover:text-blue-600 border-b border-gray-50">Funds</Link>
-                            <Link href="#apps" onClick={() => setIsMenuOpen(false)} className="py-2 hover:text-blue-600 border-b border-gray-50">Apps</Link>
+
                         </div>
 
                         <div className="mt-auto pt-6 border-t border-gray-100">
