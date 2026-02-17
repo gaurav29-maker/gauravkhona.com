@@ -16,7 +16,7 @@ export default function Eligibility() {
     ];
 
     return (
-        <section id="funds" className="py-24 px-6 bg-[#F9F9F9]">
+        <section id="funds" className="py-16 md:py-24 px-6 bg-[#F9F9F9]">
             <div className="max-w-6xl mx-auto">
 
                 {/* Section Header */}

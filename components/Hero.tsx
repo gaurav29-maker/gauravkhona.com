@@ -48,16 +48,16 @@ export default function Hero() {
                             <span className="text-gray-500 font-normal">A private 1-on-1 engineering session to audit your edge and fix your risk execution.</span>
                         </p>
 
-                        <div className="flex items-center gap-4">
+                        <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
                             <Link
                                 href="#pricing"
-                                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-sm text-sm transition-colors shadow-sm uppercase tracking-wide"
+                                className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-sm text-sm transition-colors shadow-sm uppercase tracking-wide flex justify-center"
                             >
                                 Place Order
                             </Link>
                             <Link
                                 href="#what-we-cover"
-                                className="text-blue-600 font-bold text-sm hover:underline px-4 uppercase tracking-wide"
+                                className="w-full sm:w-auto text-blue-600 font-bold text-sm hover:underline px-4 uppercase tracking-wide flex justify-center"
                             >
                                 View Analytics
                             </Link>
