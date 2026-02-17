@@ -45,10 +45,13 @@ export default function Pricing() {
         }
     ];
 
-    const generateMailto = () => {
-        const subject = `AUDIT SUBMISSION: ${answers.experience} | ${answers.capital}`;
-        const body = `SYSTEM AUDIT REQUEST\n\nEXPERIENCE: ${answers.experience}\nCAPITAL: ${answers.capital}\nSTRUGGLE: ${answers.struggle}\n\n--\nGenerated via Console`;
-        return `mailto:contact@gauravkhona.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    // CONFIGURATION: Replace this with your actual Stripe/Razorpay Payment Link
+    const PAYMENT_LINK = "https://buy.stripe.com/test_placeholder";
+
+    // If you want to keep the mailto as a fallback or pre-step, you can. 
+    // But for direct payments, we switch to the link.
+    const handlePayment = () => {
+        window.location.href = PAYMENT_LINK;
     };
 
     return (
@@ -165,12 +168,12 @@ export default function Pricing() {
                                     <p className="text-sm text-gray-500 mb-8 max-w-xs mx-auto">
                                         Your profile fits the execution parameters. Proceed to submit your application directly to the desk.
                                     </p>
-                                    <Link
-                                        href={generateMailto()}
-                                        className="inline-block w-full py-4 bg-[#10B981] text-white font-bold rounded shadow-lg hover:bg-[#059669] transition-colors"
+                                    <button
+                                        onClick={handlePayment}
+                                        className="inline-block w-full py-4 bg-[#10B981] text-white font-bold rounded shadow-lg hover:bg-[#059669] transition-colors uppercase tracking-wide"
                                     >
-                                        SUBMIT APPLICATION
-                                    </Link>
+                                        Proceed to Payment
+                                    </button>
                                     <button
                                         onClick={() => { setView('order'); setStep(0); }}
                                         className="mt-4 text-xs text-gray-400 hover:text-gray-600 underline"
