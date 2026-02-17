@@ -68,8 +68,8 @@ export default function Navbar() {
                     >
                         <div className="flex justify-between items-center border-b border-gray-100 pb-4">
                             <span className="font-bold text-lg text-gray-800">Menu</span>
-                            <button onClick={() => setIsMenuOpen(false)} className="text-gray-500 hover:text-red-500">
-                                <span className="text-2xl">&times;</span>
+                            <button onClick={() => setIsMenuOpen(false)} className="text-gray-500 hover:text-red-500 p-2">
+                                <span className="text-2xl font-light">&times;</span>
                             </button>
                         </div>
 
