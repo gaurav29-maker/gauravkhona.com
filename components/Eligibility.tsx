@@ -2,17 +2,17 @@ import { CheckCircle2, XCircle, Lock, Server, Video, Activity, ShieldCheck } fro
 
 export default function Eligibility() {
     const targets = [
-        "Seeking technical structure, not signals",
-        "Prioritize process over outcome metrics",
-        "Requirement for high-resolution clarity",
-        "Committed to long-term systemic discipline"
+        "You want a repeatable process, not a lottery ticket",
+        "You have capital but lack execution consistency",
+        "You are tired of 'guessing' trend direction",
+        "You treat trading as a business, not a hobby"
     ];
 
     const exclusions = [
-        "Signal or tip seeker",
-        "Expectation of guaranteed ROI",
-        "Short-term experimental mindset",
-        "Casual market participation"
+        "Looking for 'Hot Tips' or Calls",
+        "Expect to double money in 30 days",
+        "Can't follow simple rules",
+        "Gambling mindset / 'Action' Junkie"
     ];
 
     return (

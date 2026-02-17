@@ -23,29 +23,29 @@ export default function Hero() {
                             Console &gt; Portfolio &gt; Executive
                         </p>
                         <h1 className="text-4xl md:text-6xl font-black text-gray-800 tracking-tight leading-tight">
-                            Direct Market <br /> Intelligence
+                            Systematic Trading <br /> Architecture
                         </h1>
                     </div>
 
                     <div className="pl-7 max-w-2xl">
                         <div className="flex gap-12 mb-8 text-sm text-gray-600">
                             <div>
-                                <p className="text-xs text-gray-400 uppercase">Instrument</p>
-                                <p className="font-bold text-gray-800 text-lg">SYSTEM.ARCH</p>
+                                <p className="text-xs text-gray-400 uppercase">Service</p>
+                                <p className="font-bold text-gray-800 text-lg">SYSTEM.AUDIT</p>
                             </div>
                             <div>
-                                <p className="text-xs text-gray-400 uppercase">LTP</p>
-                                <p className="font-bold text-green-600 text-lg">1:1.00</p>
+                                <p className="text-xs text-gray-400 uppercase">Availability</p>
+                                <p className="font-bold text-green-600 text-lg">OPEN</p>
                             </div>
                             <div>
-                                <p className="text-xs text-gray-400 uppercase">Change</p>
-                                <p className="font-bold text-gray-800 text-lg">0.00%</p>
+                                <p className="text-xs text-gray-400 uppercase">Format</p>
+                                <p className="font-bold text-gray-800 text-lg">1:1 SESSION</p>
                             </div>
                         </div>
 
                         <p className="text-lg text-gray-700 font-medium leading-relaxed mb-8">
-                            Institutional-grade execution logic. <br />
-                            <span className="text-gray-500 font-normal">Private technical build for serious capital allocators.</span>
+                            Stop trading random setups. Build a manufacturing process for reliable profits.<br />
+                            <span className="text-gray-500 font-normal">A private 1-on-1 engineering session to audit your edge and fix your risk execution.</span>
                         </p>
 
                         <div className="flex items-center gap-4">
