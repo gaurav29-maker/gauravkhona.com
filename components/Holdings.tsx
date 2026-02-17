@@ -23,7 +23,7 @@ export default function Holdings() {
                 {/* Table Layout */}
                 <div className="bg-white border border-gray-200 rounded-sm shadow-sm overflow-hidden text-sm">
                     {/* Table Header */}
-                    <div className="grid grid-cols-6 bg-gray-50 text-gray-500 py-3 px-4 font-medium text-xs uppercase border-b border-gray-200">
+                    <div className="grid grid-cols-4 md:grid-cols-6 bg-gray-50 text-gray-500 py-3 px-4 font-medium text-xs uppercase border-b border-gray-200">
                         <div className="col-span-2 md:col-span-1">Instrument</div>
                         <div className="hidden md:block text-right">Qty.</div>
                         <div className="hidden md:block text-right">Avg. Cost</div>
@@ -34,7 +34,7 @@ export default function Holdings() {
 
                     {/* Table Rows */}
                     {holdings.map((stock) => (
-                        <div key={stock.id} className="grid grid-cols-6 py-4 px-4 border-b border-gray-100 hover:bg-gray-50 transition-colors items-center">
+                        <div key={stock.id} className="grid grid-cols-4 md:grid-cols-6 py-4 px-4 border-b border-gray-100 hover:bg-gray-50 transition-colors items-center">
                             <div className="col-span-2 md:col-span-1">
                                 <span className="font-semibold text-gray-700 block text-sm sm:text-base cursor-pointer hover:text-blue-600 transition-colors">{stock.instrument}</span>
                                 <span className="text-[10px] text-gray-400 uppercase tracking-wider">Invested</span>
@@ -56,12 +56,12 @@ export default function Holdings() {
                     ))}
 
                     {/* Total Row */}
-                    <div className="bg-gray-50 grid grid-cols-6 py-4 px-4 border-t border-gray-200">
+                    <div className="bg-gray-50 grid grid-cols-4 md:grid-cols-6 py-4 px-4 border-t border-gray-200">
                         <div className="col-span-2 md:col-span-1 font-bold text-gray-600">Total</div>
                         <div className="hidden md:block text-right"></div>
                         <div className="hidden md:block text-right"></div>
                         <div className="hidden md:block text-right"></div>
-                        <div className="col-span-3 md:col-span-1 text-right col-start-4 md:col-start-6 font-bold text-[#10B981] text-lg flex items-center justify-end">
+                        <div className="col-span-1 md:col-span-1 text-right col-start-4 md:col-start-6 font-bold text-[#10B981] text-lg flex items-center justify-end">
                             +285.8% <ArrowUpRight className="w-5 h-5 ml-1" />
                         </div>
                     </div>
