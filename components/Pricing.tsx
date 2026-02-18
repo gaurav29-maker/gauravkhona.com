@@ -55,7 +55,6 @@ export default function Pricing() {
     };
 
     return (
-    return (
         <section id="pricing" className="py-12 md:py-24 px-4 bg-[#F9F9F9] flex items-center justify-center min-h-[80vh]">
             <div className="w-full max-w-lg bg-white rounded-lg shadow-xl overflow-hidden font-sans border border-gray-200">
 
