@@ -23,16 +23,16 @@ export default function Holdings() {
                 {/* Table Layout */}
                 <div className="bg-white border border-gray-200 rounded-sm shadow-sm overflow-hidden text-sm">
                     {/* Mobile View (List) */}
-                    <div className="md:hidden">
+                    <div className="md:hidden bg-white">
                         {holdings.map((stock) => (
-                            <div key={stock.id} className="flex justify-between items-center py-4 px-4 border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                                <div>
-                                    <span className="font-bold text-gray-800 block text-sm">{stock.instrument}</span>
-                                    <span className="text-xs text-gray-500 mt-1 block">{stock.ltp}</span>
+                            <div key={stock.id} className="flex justify-between items-start py-5 px-5 border-b border-gray-100 last:border-0 hover:bg-gray-50 transition-colors">
+                                <div className="flex flex-col gap-1">
+                                    <span className="font-bold text-gray-800 text-sm tracking-tight">{stock.instrument}</span>
+                                    <span className="text-xs text-gray-400 font-mono">{stock.ltp}</span>
                                 </div>
-                                <div className="text-right">
-                                    <div className="text-[#10B981] font-bold text-sm">{stock.pl}</div>
-                                    <span className="text-[10px] text-gray-400 uppercase">Return</span>
+                                <div className="text-right flex flex-col gap-1">
+                                    <div className="text-[#10B981] font-bold text-sm tracking-tight">{stock.pl}</div>
+                                    <span className="text-[10px] text-gray-400 uppercase font-medium tracking-wider">Return</span>
                                 </div>
                             </div>
                         ))}
