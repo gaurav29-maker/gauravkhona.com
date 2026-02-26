@@ -25,7 +25,7 @@ export default function Holdings() {
                     {/* Mobile View (List) */}
                     <div className="md:hidden bg-white">
                         {holdings.map((stock) => (
-                            <div key={stock.id} className="flex justify-between items-start py-5 px-5 border-b border-gray-100 last:border-0 hover:bg-gray-50 transition-colors">
+                            <div key={stock.id} className="flex justify-between items-start py-3 px-4 border-b border-gray-100 last:border-0 hover:bg-gray-50 transition-colors">
                                 <div className="flex flex-col gap-1">
                                     <span className="font-bold text-gray-800 text-sm tracking-tight">{stock.instrument}</span>
                                     <span className="text-xs text-gray-400 font-mono">{stock.ltp}</span>

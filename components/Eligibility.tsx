@@ -16,7 +16,7 @@ export default function Eligibility() {
     ];
 
     return (
-        <section id="funds" className="py-16 md:py-24 px-6 bg-[#F9F9F9]">
+        <section className="py-16 md:py-24 px-6 bg-[#F9F9F9]">
             <div className="max-w-6xl mx-auto">
 
                 {/* Section Header */}
@@ -67,7 +67,7 @@ export default function Eligibility() {
                 </div>
 
                 {/* Intake Criteria (Minimum Capital) */}
-                <div className="bg-white border border-gray-200 rounded shadow-sm overflow-hidden mb-20 relative">
+                <div id="intake" className="bg-white border border-gray-200 rounded shadow-sm overflow-hidden mb-20 relative">
                     <div className="absolute top-0 right-0 p-4 opacity-10">
                         <Lock className="w-24 h-24 text-gray-900" />
                     </div>
@@ -86,7 +86,7 @@ export default function Eligibility() {
                         </div>
 
                         <p className="text-sm text-gray-500 italic max-w-2xl mx-auto mt-8 bg-gray-50 p-4 rounded border border-gray-100">
-                            "Qualification ensures meaningful discussion around risk frameworks, allocation efficiency, and systemic capital protection."
+                            &quot;Qualification ensures meaningful discussion around risk frameworks, allocation efficiency, and systemic capital protection.&quot;
                         </p>
                         <p className="mt-4 text-[10px] font-bold text-red-500 uppercase tracking-wide">
                             Non-Negotiable Qualification Requirement
@@ -95,7 +95,7 @@ export default function Eligibility() {
                 </div>
 
                 {/* Operational Data Footer */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-sm">
+                <div id="operations" className="grid grid-cols-1 md:grid-cols-4 gap-6 text-sm">
                     <div className="md:col-span-1">
                         <p className="font-bold text-gray-900 mb-2">Operational Data</p>
                         <p className="text-xs text-gray-500">System Specifications</p>

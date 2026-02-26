@@ -1,11 +1,25 @@
 "use client";
 
 import Link from "next/link";
-import { User, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState } from "react";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        const href = e.currentTarget.getAttribute("href");
+        if (href && href.startsWith("#")) {
+            e.preventDefault();
+            const targetId = href.substring(1);
+            const elem = document.getElementById(targetId);
+            if (elem) {
+                // Scroll the element to the center of the viewport
+                elem.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+            setIsMenuOpen(false); // Close mobile menu if open
+        }
+    };
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 h-16 flex items-center shadow-sm">
@@ -28,16 +42,16 @@ export default function Navbar() {
 
                 {/* Desktop Links */}
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-                    <Link href="#pricing" className="hover:text-blue-600 transition-colors">
+                    <Link href="#pricing" onClick={handleScroll} className="hover:text-blue-600 transition-colors">
                         Orders
                     </Link>
-                    <Link href="#holdings" className="hover:text-blue-600 transition-colors">
+                    <Link href="#holdings" onClick={handleScroll} className="hover:text-blue-600 transition-colors">
                         Holdings
                     </Link>
-                    <Link href="#positions" className="hover:text-blue-600 transition-colors">
+                    <Link href="#operations" onClick={handleScroll} className="hover:text-blue-600 transition-colors">
                         Positions
                     </Link>
-                    <Link href="#funds" className="hover:text-blue-600 transition-colors">
+                    <Link href="#intake" onClick={handleScroll} className="hover:text-blue-600 transition-colors">
                         Funds
                     </Link>
 
@@ -52,10 +66,10 @@ export default function Navbar() {
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="md:hidden text-gray-600"
+                    className="md:hidden text-gray-600 p-2 -mr-2"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                    <Menu className="w-6 h-6" />
+                    <Menu className="w-7 h-7" />
                 </button>
             </div>
 
@@ -68,16 +82,16 @@ export default function Navbar() {
                     >
                         <div className="flex justify-between items-center border-b border-gray-100 pb-4">
                             <span className="font-bold text-lg text-gray-800">Menu</span>
-                            <button onClick={() => setIsMenuOpen(false)} className="text-gray-500 hover:text-red-500 p-2">
-                                <span className="text-2xl font-light">&times;</span>
+                            <button onClick={() => setIsMenuOpen(false)} className="text-gray-500 hover:text-red-500 p-3 -mr-3">
+                                <span className="text-3xl font-light">&times;</span>
                             </button>
                         </div>
 
                         <div className="flex flex-col gap-4 text-sm font-medium text-gray-600">
-                            <Link href="#pricing" onClick={() => setIsMenuOpen(false)} className="py-2 hover:text-blue-600 border-b border-gray-50">Orders</Link>
-                            <Link href="#holdings" onClick={() => setIsMenuOpen(false)} className="py-2 hover:text-blue-600 border-b border-gray-50">Holdings</Link>
-                            <Link href="#positions" onClick={() => setIsMenuOpen(false)} className="py-2 hover:text-blue-600 border-b border-gray-50">Positions</Link>
-                            <Link href="#funds" onClick={() => setIsMenuOpen(false)} className="py-2 hover:text-blue-600 border-b border-gray-50">Funds</Link>
+                            <Link href="#pricing" onClick={handleScroll} className="py-2 hover:text-blue-600 border-b border-gray-50">Orders</Link>
+                            <Link href="#holdings" onClick={handleScroll} className="py-2 hover:text-blue-600 border-b border-gray-50">Holdings</Link>
+                            <Link href="#operations" onClick={handleScroll} className="py-2 hover:text-blue-600 border-b border-gray-50">Positions</Link>
+                            <Link href="#intake" onClick={handleScroll} className="py-2 hover:text-blue-600 border-b border-gray-50">Funds</Link>
 
                         </div>
 

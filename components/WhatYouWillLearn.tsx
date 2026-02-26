@@ -25,7 +25,7 @@ export default function WhatYouWillLearn() {
                     {systems.map((system) => (
                         <div key={system.id} className="group flex flex-col">
                             <div className="text-technical text-white mb-6 border-b border-border pb-2 inline-block w-fit">
-                                // {system.id}
+                                {'// '}{system.id}
                             </div>
                             <h3 className="text-2xl font-bold mb-4 tracking-tighter uppercase group-hover:text-muted transition-colors">
                                 {system.title}
